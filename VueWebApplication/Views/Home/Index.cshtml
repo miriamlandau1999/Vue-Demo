@@ -1,0 +1,18 @@
+﻿<div id="app" class="row" style="margin-top:40px;">
+    <div class="col-md-6 col-md-offset-3 well row">
+        <input type="text" placeholder="Type new word" v-model="word" class="form-control"/>
+        <button class="btn btn-primary" v-on:click="addWord">Add</button>
+    </div>
+    <div class="col-md-6 col-md-offset-3 well">
+        <ul>
+            <template v-for="word in words">
+                <li>{{word}}</li>
+            </template>
+        </ul>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/vue.min.js"></script>
+    <script src="~/Scripts/index.js"></script>
+    }
